@@ -15,9 +15,9 @@
  	        android:title="Subreddit 1" />
  	       
 	    <EditTextPreference
-	        android:defaultValue="earthporn"
+	        android:defaultValue=""
 	        android:key="sr2"
- 	        android:summary="r/earthporn"
+ 	        android:summary="r/"
 	  	    android:title="Subreddit 2" />
 	
 	    <EditTextPreference
