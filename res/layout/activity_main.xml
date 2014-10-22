@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45" >
+
+        <ImageView
+            android:id="@+id/currentBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/currentBG"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/favButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/star_big_off" />
+
+            <ImageButton
+                android:id="@+id/pausePlayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_pause" />
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_media_next" />
+
+            <ImageButton
+                android:id="@+id/cropButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_crop" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.akrolsmir.kabegami.FavoritesView
+        android:id="@+id/favorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:drawSelectorOnTop="true"
+        android:numColumns="3" >
+    </com.akrolsmir.kabegami.FavoritesView>
+
+</LinearLayout>

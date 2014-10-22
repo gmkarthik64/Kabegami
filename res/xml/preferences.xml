@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="preferenceKey" 
+	android:title="Settings" >
+
+	<PreferenceScreen
+		android:key="pref_subreddits"
+		android:title="Subreddits"
+		android:summary="r/wallpaper">
+		
+		<EditTextPreference
+        	android:defaultValue="q-plus"
+        	android:key="sr1"
+	        android:summary="r/q-plus"
+ 	        android:title="Subreddit 1" />
+ 	       
+	    <EditTextPreference
+	        android:defaultValue="earthporn"
+	        android:key="sr2"
+ 	        android:summary="r/earthporn"
+	  	    android:title="Subreddit 2" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr3"
+	        android:summary="r/"
+	        android:title="Subreddit 3" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr4"
+	        android:summary="r/"
+	        android:title="Subreddit 4" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr5"
+	        android:summary="r/"
+	        android:title="Subreddit 5" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr6"
+	        android:summary="r/"
+	        android:title="Subreddit 6" />
+        
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr7"
+	        android:summary="r/"
+	        android:title="Subreddit 7" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr8"
+	        android:summary="r/"
+	        android:title="Subreddit 8" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr9"
+	        android:summary="r/"
+	        android:title="Subreddit 9" />
+	
+	    <EditTextPreference
+	        android:defaultValue=""
+	        android:key="sr0"
+	        android:summary="r/"
+	        android:title="Subreddit 10" />
+	        
+	</PreferenceScreen>
+	
+	<com.akrolsmir.kabegami.SortPreference
+		android:defaultValue="Hot"
+		android:key="pref_sort"
+		android:summary = "Hot"
+		android:title="Sort by" />
+
+    <com.akrolsmir.kabegami.FrequencyPickerPreference
+        android:defaultValue="2 days"
+        android:key="pref_refresh_freq"
+        android:summary="Every 2 days (currently paused)"
+        android:title="Change wallpapers" />
+    
+    <CheckBoxPreference 
+        android:defaultValue="true"
+        android:key="pref_allow_data"
+        android:title="Allow data usage"/>
+        
+    <CheckBoxPreference 
+        android:defaultValue="false"
+        android:key="pref_show_nsfw"
+        android:title="Show NSFW content"/>
+
+</PreferenceScreen>
